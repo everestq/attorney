@@ -2,4 +2,88 @@
 @import 'global';
 
 
+//start header
+.header{
+    height: 120px;
+}
+.header__inner{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo-text{
+    @include f700;
+    font-size: 36px;
+    line-height: 40px;
+    color: $blue;
+    text-transform: uppercase;
+    border: 3px solid $blue;
+    padding: 20px 40px;
+
+}
+.header__right{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 7px;
+    max-width: 570px;
+    width: 100%;
+}
+.header__callback{
+    display: flex;
+    max-width: 330px;
+}
+.header__text{
+    color: $blue;
+    text-align: right;
+    span{
+        @include f400;
+        font-size: 14px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+}
+.header__phone {
+    a{
+        @include f700;
+        font-size: 32px;
+        line-height: 35px;
+        text-decoration: none;
+        color: $blue;
+        margin-left: 15px;
+    }
+}
+.header__menu{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    max-width: 570px;
+    width: 100%;
+    ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        @include f400;
+        font-size: 15px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: $blue;
+    }
+}
+
+
+
+//end header
+
+
+
+
+
+
+
 
